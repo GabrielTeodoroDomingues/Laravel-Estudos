@@ -18,3 +18,8 @@ Route::get('/', function () {
 Route::get('/home', 'HomeController@viewHome');
 
 Route::get('/cidades', 'CidadeController@viewCidade');
+
+Route::get('/request/id/{id?}', 'HomeController@request');
+
+Route::get('/formulario', 'HomeController@viewFormulario');
+Route::post('/formulario', 'HomeController@cadastrarFormulario');
